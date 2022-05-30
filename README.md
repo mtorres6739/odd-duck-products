@@ -1,2 +1,1 @@
-# 201d79-class-14-starter-code
-starter code for Class 14 Lab
+# 201 Class 14 Starter Code
