@@ -1,4 +1,4 @@
-/* Main grid wrapper for entire page */
+/* Main grid wrapper for entire page layout */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -99,6 +99,8 @@ main section div header {
   background-color: white;
 }
 
+/* This is the first section deck col-1*/
+
 section:nth-of-type(1) {
   background: white;
   grid-area: section1;
@@ -113,6 +115,8 @@ section:nth-of-type(1) {
   padding-left: 20px;
   ;
 }
+
+/* This is the second section deck col-2 */
 
 section:nth-of-type(2) {
   background: white;
@@ -135,6 +139,8 @@ main li {
   line-height: 1.3em;
   padding-left: 20px;
 }
+
+/* This is the form */
 
 #catalog {
   border: solid 2px rgb(224, 219, 219);
@@ -192,28 +198,7 @@ input[type=submit] {
   border: solid 2px rgb(224, 219, 219);
 }
 
-/* #cart {
-  margin-left: 20px;
-  border: solid thin black;
-}
-
-#cart tr th {
-  border: solid thin black;
-  margin: 10px;
-  padding: 10px;
-} */
-
-/* #cart,
-th {
-  text-align: center;
-} */
-
-/* #cart,
-td {
-  border: solid thin black;
-  padding: 5px;
-  text-align: center;
-} */
+/* This styles the items cart */
 
 #cart {
   border-collapse: collapse;
@@ -249,8 +234,3 @@ td {
 #cart tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
-
-/* #cart tbody tr {
-  font-weight: bold;
-  color: #009879;
-} */
