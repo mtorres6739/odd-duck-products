@@ -1,1 +1,141 @@
 /* TODO: Make it awesome */
+body {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+header {
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+nav {
+  border: none;
+  display: flex;
+  margin-left: 80px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ol {
+  border: solid thin black;
+  display: inline-block;
+  margin-left: 10px;
+  text-indent: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+.card {
+  border: none;
+  margin-bottom: 50px;
+}
+
+footer {
+  border: solid thin rgb(233, 228, 228);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(233, 228, 228);
+}
+
+#items {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid thin black;
+}
+
+#catalog {
+  border: solid thin black;
+  margin-left: 10px;
+  width: 605px;
+  border-radius: 15px;
+  height: 100%;
+
+}
+
+fieldset {
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 15px;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+legend {
+  height: 100%;
+}
+
+input[type=number] {
+  width: 75px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid thin black;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 14px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 25px;
+}
+
+
+#cart {
+  margin-left: 20px;
+  border: solid thin black;
+}
+
+#cart tr th {
+  border: solid thin black;
+  margin: 10px;
+  padding: 10px;
+}
+
+#cart,
+th {
+  text-align: center;
+}
+
+#cart,
+td {
+  border: solid thin black;
+  padding: 5px;
+  text-align: center;
+}
