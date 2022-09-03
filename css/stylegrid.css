@@ -1,0 +1,256 @@
+/* Main grid wrapper for entire page */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 50px;
+}
+
+header,
+main {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(224, 219, 219);
+}
+
+body header h1 {
+  font-size: 30px;
+  background-color: rgb(224, 219, 219);
+}
+
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: rgb(224, 219, 219);
+  color: #9e9b9b;
+  padding: 20px;
+}
+
+/* Grid area for header section */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'h1 h1 nav nav'
+  ;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+nav {
+  grid-area: nav;
+  justify-self: end;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+/* Grid area for main section */
+
+main {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25% 1fr;
+  grid-template-areas:
+    'section1 section1 section1 section1'
+    'section2 section2 section2 section2'
+
+}
+
+main section div header h1 {
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(224, 219, 219);
+}
+
+main section div header {
+  background-color: white;
+}
+
+section:nth-of-type(1) {
+  background: white;
+  grid-area: section1;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  ;
+}
+
+section:nth-of-type(2) {
+  background: white;
+  color: black;
+  grid-area: section2;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+
+}
+
+
+main li {
+  line-height: 1.3em;
+  padding-left: 20px;
+}
+
+#catalog {
+  border: solid 2px rgb(224, 219, 219);
+  font-size: 20px;
+  margin-left: 0px;
+  width: 680px;
+  border-radius: 15px;
+  height: auto;
+  margin-bottom: 20px;
+
+}
+
+fieldset {
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 15px;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+legend {
+  height: 100%;
+}
+
+input[type=number] {
+  width: 75px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 2px rgb(224, 219, 219);
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 14px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 25px;
+}
+
+#items {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 2px rgb(224, 219, 219);
+}
+
+/* #cart {
+  margin-left: 20px;
+  border: solid thin black;
+}
+
+#cart tr th {
+  border: solid thin black;
+  margin: 10px;
+  padding: 10px;
+} */
+
+/* #cart,
+th {
+  text-align: center;
+} */
+
+/* #cart,
+td {
+  border: solid thin black;
+  padding: 5px;
+  text-align: center;
+} */
+
+#cart {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#cart thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+#cart th,
+#cart td {
+  padding: 12px 15px;
+}
+
+#cart tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+#cart tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+#cart tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* #cart tbody tr {
+  font-weight: bold;
+  color: #009879;
+} */
